@@ -108,3 +108,9 @@ GitHub will usually show a prompt to create a Pull Request from your newly pushe
 Click Compare & pull request.
 
 Fill in PR details and submit.
+
+How to swith branch from feture branch to master
+  ==>git checkout master
+
+or, with newer Git versions:
+  ==> git switch master
