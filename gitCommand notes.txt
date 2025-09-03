@@ -1,0 +1,64 @@
+URL from GitHub repository specific of programOny : https://github.com/dodiamahesh/programOnly.git
+=============
+To push a new local project to GitHub, follow these step-by-step commands in your terminal. This workflow is suited for projects not yet connected to any remote repository and covers the necessary Git and GitHub operations for first-time uploads.
+
+GitHub Project Initialization Steps
+1. Set Up Git and GitHub
+Ensure Git is installed on your machine.
+
+Sign up for a GitHub account at github.com, and log in.
+
+Set your global username and email in Git:
+
+bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+2. Create a New GitHub Repository
+Go to GitHub and create a new repository by clicking the "+" icon, then "New repository".
+
+Choose a name for your repo (example: my-new-project) and click "Create repository".
+
+Copy the repository URL shown on GitHub (example: https://github.com/your-username/my-new-project.git).
+
+3. Initialize Local Project Folder
+Open your terminal and navigate to your project folder:
+
+bash
+cd /path/to/your/project
+Initialize a Git repository:
+
+bash
+git init
+4. Add and Commit Files
+Add all files to staging:
+
+bash
+git add .
+Commit files with a message:
+
+bash
+git commit -m "Initial commit"
+5. Connect Local Repo to GitHub
+Add GitHub as the remote origin:
+
+bash
+git remote add origin https://github.com/your-username/my-new-project.git
+6. Push to GitHub
+Push your code to GitHub (main branch):
+
+bash
+git push -u origin main
+If your default branch is "master", use "master" instead:
+
+bash
+git push -u origin master
+Quick Reference Command List
+bash
+# Inside your project folder:
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/your-username/my-new-project.git
+git push -u origin main
