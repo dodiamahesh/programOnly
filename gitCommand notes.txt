@@ -69,3 +69,42 @@ Open Git Bash and run:
 
 bash
 git config --global credential.helper store
+
+
+
+=== Update File for new commit and create Pull request before merge
+ git diff   ===> See All Unstaged Changes
+ 
+ Stage Only the Desired Files 
+    git add file1.txt file2.txt
+	
+How to get stage file list
+ git status
+ 
+ List Files in a Specific Commit 
+ git show --name-only <commit_hash>   (For any commmit)
+ git show --name-only HEAD   (For Last commmit)
+ 
+ 
+ I commit the files but stil not push WHile I am push che changes on that time I dont want to marge directly I want to create PR for that commit so how can i do from git bash
+ 
+ . Create a New Branch Locally
+Create and switch to a new branch for your changes:
+
+bash
+git checkout -b my-feature-branch
+Replace my-feature-branch with a meaningful branch name.
+
+2. Push the Branch to GitHub
+Push your committed changes to this new branch on GitHub:
+
+bash
+git push -u origin my-feature-branch
+3. Create a Pull Request on GitHub
+After pushing, go to your GitHub repository page in the browser.
+
+GitHub will usually show a prompt to create a Pull Request from your newly pushed branch.
+
+Click Compare & pull request.
+
+Fill in PR details and submit.
